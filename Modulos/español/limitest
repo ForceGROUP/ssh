@@ -1,0 +1,12 @@
+#!/bin/bash
+
+unset LIMITX
+LIMITX=$(ps aux|grep -v grep|grep "limiter")
+if [[ ! $LIMITX ]]; then
+#/bin/limiter &
+fun_bar 'screen -dmS limit-ssh /etc/SSHPlus/limiter'
+echo -e "\n\033[1;32m  LIMITADOR ACTIVADO CON ÉXITO!\033[0m"
+else
+killall limiter
+echo -e "\n\033[1;31m LIMITADOR DETENIDO CON ÉXITO!\033[0m"
+fi
