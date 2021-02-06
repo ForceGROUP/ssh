@@ -119,14 +119,12 @@ clear
 echo ""
 echo -e "              \033[1;33m[\033[1;31m!\033[1;33m] \033[1;32mFINALIZANDO \033[1;33m[\033[1;31m!\033[1;33m] \033[0m"
 echo ""
-#echo -e "      \033[1;33mTERMINANDO INSTALACION! \033[0m"
-#echo ""
-#fun_bar "$_lnk/list $_lnk $_Ink $_1nk $key"
-#-----------------------------------------------------------------------------------------------------------------
+echo -e "      \033[1;33mTERMINANDO INSTALACION! \033[0m"
+echo ""
+fun_bar "$_lnk/list $_lnk $_Ink $_1nk $key"
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
 wget https://raw.githubusercontent.com/ForceGROUP/ssh/master/versao > /dev/null 2>&1
-#-----------------------------------------------------------------------------------------------------------------
 clear
 echo ""
 cd $HOME
