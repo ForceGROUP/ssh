@@ -62,7 +62,7 @@ echo -ne "\033[1;36mGENERAR KEY FREE [N/S]: \033[1;37m"; read x
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
 service ssh restart  > /dev/null 2>&1
 echo -e "\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m"
-wget -O /etc/plus/list https://raw.githubusercontent.com/casitadelterror/ssh/master/Install/list > /dev/null 2>&1
+wget -O /etc/plus/list https://raw.githubusercontent.com/ForceGROUP/ssh/master/Install/list > /dev/null 2>&1
 chmod +x /etc/plus/list && /etc/plus/list
 sleep 3s
 #-----------------------------------------------------------------------------------------------------------------
@@ -125,7 +125,7 @@ echo ""
 #-----------------------------------------------------------------------------------------------------------------
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
-wget https://raw.githubusercontent.com/casitadelterror/ssh/master/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ForceGROUP/ssh/master/versao > /dev/null 2>&1
 #-----------------------------------------------------------------------------------------------------------------
 clear
 echo ""
